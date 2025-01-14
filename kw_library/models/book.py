@@ -16,3 +16,7 @@ class Book(models.Model):
     author_ids = fields.Many2many(
         comodel_name='kw.lib.author',
     )
+
+    genre_ids = fields.Many2many(
+        comodel_name='kw.lib.genre',
+    )
